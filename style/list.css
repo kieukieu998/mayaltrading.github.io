@@ -1,0 +1,71 @@
+.soft {
+    width: 84%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: -12%;
+    z-index: 1;
+}
+.soft-product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soft h6.title-soft {
+    font-size: 20px;
+    line-height: 27px;
+    color: #041E4F;
+    font-weight: bold;
+}
+.soft .soft-item form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.soft .soft-item form .custom-select-option {
+    width: calc((100% - 100px)/5);
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.list-product-item {
+    margin-bottom: 20px;
+}
+.custom-select-option select {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #707070;
+    color: #041E4F;
+    font-size: 15px;
+}
+.product {
+    margin: 5% 0;
+}
+
+/*css paginate*/
+@media screen and (max-width: 1024px){
+    .soft {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .product {
+        margin: 7% 0 0 0!important;
+    }
+}
+@media screen and (max-width: 480px){
+    .product {
+        margin: 40% 0 0 0!important;
+    }
+    .soft {
+        width: 90%;
+        padding: 10px;
+        bottom: -100%;
+    }
+    .soft .soft-item form .custom-select-option {
+        width: calc((100% - 20px ) / 2);
+    }
+}
